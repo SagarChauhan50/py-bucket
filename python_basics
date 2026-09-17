@@ -69,7 +69,7 @@ print(user_profile["username"])     # Accesses value by key: "coder123"
 # 5 Functions :
 
 # Defining a function that takes two arguments and returns a value
-To calculate the area of a rectangle
+# To calculate the area of a rectangle
 
 
 def calculate_area(length, width):
