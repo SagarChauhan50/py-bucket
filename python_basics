@@ -1,1 +1,124 @@
-print ("Hello world")
+# 1 Storing a string (text) data type :
+
+name = "Alice"
+
+# Storing an integer (whole number) data type
+age = 25
+
+# Storing a float (decimal number) data type
+height = 5.7
+
+# Storing a boolean (True/False) data type
+is_employed = True
+
+print(f"Name: {name}, Age: {age}, Height: {height}, Employed: {is_employed}")
+
+
+
+# 2 Conditional Statements :
+
+
+score = 85
+
+# Check multiple conditions sequentially
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")  # This block executes because 85 >= 80 is True
+else:
+    print("Grade: C")
+
+
+# 3 Loops (Repetition) :
+
+# FOR LOOP: Iterating over a sequence (a list of fruits)
+
+
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(f"I like {fruit}")
+
+# WHILE LOOP: Repeating code as long as a condition remains True
+count = 3
+while count > 0:
+    print(f"Countdown: {count}")
+    count -= 1  # Decrement to eventually break the loop
+
+
+# 4 Data structures (list and Dictionary :
+
+
+# LIST: Ordered collection of items
+
+
+shopping_list = ["milk", "bread", "eggs"]
+shopping_list.append("butter")  # Adding an item
+
+# DICTIONARY: Key-value mapping for structured data
+user_profile = {
+    "username": "coder123",
+    "email": "coder@example.com",
+    "active": True
+}
+
+print(shopping_list[0])             # Accesses first item: "milk"
+print(user_profile["username"])     # Accesses value by key: "coder123"
+
+
+
+# 5 Functions :
+
+# Defining a function that takes two arguments and returns a value
+To calculate the area of a rectangle
+
+
+def calculate_area(length, width):
+    area = length * width
+    return area
+
+# Calling the function
+room_area = calculate_area(5, 10)
+print(f"The area is: {room_area}")
+
+
+
+
+# 6 Error Handling : 
+
+# Attempting code that might cause an error
+try:
+    number = int(input("Enter a number: "))
+    result = 10 / number
+    print(f"Result is {result}")
+    
+# Catching specific division-by-zero or value conversion errors
+except ZeroDivisionError:
+    print("Error: You cannot divide by zero!")
+except ValueError:
+    print("Error: Please enter a valid integer.")
+
+
+
+# 7. File Handling :
+
+# Writing to a text file
+with open("note.txt", "w") as file:
+    file.write("Hello, this is a test file saved via Python!")
+
+# Reading from the text file
+with open("note.txt", "r") as file:
+    content = file.read()
+    print(f"File content: {content}")
+
+
+
+
+
+
+
+
+
+
+
+
+
